@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    background-color: gray;
+    /* overflow: hidden; */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+    background-color: #fd3333;
+}
+
+.hero-section {
+    color: #e0e0e0;
+    height: 100px;
+    padding: 10px 15px;
+    background-color: #4e0000;
+    
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    position: sticky;
+    z-index: 1;
+    top: 60px;
+    width: 250px;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.filter {
+    padding: 10px 15px;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 20px 30px;
+}
+
+section>div {
+    flex: 1 1 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 15vmax;
+}
+
+.box {
+    padding: 20px;
+    background: #777;
+}
